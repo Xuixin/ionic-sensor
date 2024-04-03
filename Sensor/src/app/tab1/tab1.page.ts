@@ -21,5 +21,17 @@ export class Tab1Page {
     })
   }
 
+  buzzerOn(){
+    update( ref(this.database, 'TempuratureSensor'), {
+      buzzer:1
+    })
+  }
+  buzzerOff(){
+    update( ref(this.database, 'TempuratureSensor'), {
+      buzzer:0
+    })
+  }
+  
+
 
 }
